@@ -44,6 +44,14 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_5
+  packages:
+  - name: March10Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.march10.integrations:flow1
   packages:
   - name: March10Project
@@ -61,6 +69,8 @@ configurationVariables:
   : "0"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.driverType
+  : Progress® DataDirect®
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.driverType
@@ -75,6 +85,8 @@ configurationVariables:
   : "0"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.trustStore
   : ""
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.portNumber
@@ -99,6 +111,8 @@ configurationVariables:
   : loginTimeout=60;
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : JDBC_BVT
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
@@ -143,6 +157,8 @@ configurationVariables:
   : "false"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.user
   : sss
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.portNumber
+  : "1521"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.datasourceClass
@@ -151,54 +167,86 @@ configurationVariables:
   : "1000"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
   : "false"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
   : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.databaseName
+  : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
   : ssss
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.serverName
+  : ddd
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.networkProtocol
+  : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionManagerSettings.startupBackoffSecs
   : "10"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.driverType
   : Progress® DataDirect®
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionEnabled
   : "false"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.password
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.databaseName
   : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.trustStore
   : ""
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionEnabled
+  : "false"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.databaseName
   : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.keyStore
+  : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.portNumber
   : "1521"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.blockingTimeout
+  : "1000"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.password
   : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.networkProtocol
   : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
   : ""
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
   : ORACLE
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.trustStore
+  : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.serverName
   : xsds
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupBackoffSecs
@@ -211,6 +259,8 @@ configurationVariables:
   : "0"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.networkProtocol
   : ""
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolable
@@ -219,6 +269,8 @@ configurationVariables:
   : ORACLE
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.user
+  : ss
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.keyStore
@@ -227,6 +279,8 @@ configurationVariables:
   : loginTimeout=60;
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_5.connectionSettings.dbType
+  : ORACLE
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
   : ""
   ? artConnection.March10Project.project.march10.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
